@@ -271,7 +271,8 @@ label{
     flex-direction: column;
 }
 h1{
-    font-size: larger;
+    font-size: xx-large;
+    padding: 10%;
 }
 h2{
     font-size: xx-large;
@@ -289,13 +290,11 @@ header{
     margin: 0px;
     box-shadow: 190px 27px 6px;
 }
-nav{
-    font-size: xx-small;
-    text-align: end;
+header p{
+    font-size: medium;
 }
-
-header p {
-    font-size: small;
+nav{
+    text-align: end;
 }
 }
 @media (min-width:768px){
