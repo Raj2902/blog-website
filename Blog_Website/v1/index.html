@@ -19,13 +19,28 @@
     />
     <!--Remove or add the comments from the link to enable or disable the styling on the webpage.-->
     <!--Basic template-->
-    <link rel="stylesheet" href="./css/basicTemplate.css"/>
-    <!--Advance template-->
-    <!--<link rel="stylesheet" href="./css/intermidiateTemplate.css" />-->
+    <link id="stylesheet" rel="stylesheet" href="./css/basicTemplate.css"/>
+    <!--Intermidiate template-->
+    <!--<link id="stylesheet" rel="stylesheet" href="./css/intermidiateTemplate.css" />-->
     <title>From Newbie to Ninja: Conquering the Code with Raj</title>
   </head>
   <body id="top">
+    <div class="bubbles">
+      <span class="b1">&nbsp;</span>
+      <span class="b3">&nbsp;</span>
+      <span class="b4">&nbsp;</span>
+      <span class="b5">&nbsp;</span>
+      <span class="b6">&nbsp;</span>
+    </div>
     <header>
+      <form class="temp-form" action="#">
+        <label class="temp" for="template">Select Template :</label>
+      <select name="template" id="temp" onchange="temp_select()">
+        <option value="basic">Basic</option>
+        <option value="intermidiate">Intermidiate</option>
+        <option value="advance">Advance</option>
+      </select>
+      </form>
       <h1>Coding My Way Up: Adventures in Web Development</h1>
       <p>
         Follow my journey from web development newbie to a Full Stack Web
@@ -322,104 +337,106 @@
         </section>
         <section id="certificates">
           <h2>Certificates</h2>
-          <article class="blog cert">
-            <h3>Structure of a webpage and design</h3>
-            <p>
-              These are the certificates I achieved in Html & Css over a period of
-              time.
-            </p>
-            <img
-              src="./images/html certificate.png"
-              width="500"
-              height="500"
-              alt="html-cert"
-              class="html-cert"
-            />
-            <ul>
-              <li>
-                These are the certificates I've earned over time, representing my
-                journey in acquiring valuable skills and knowledge.
-              </li>
-              <li>
-                Each of these certificates marks a significant milestone in my
-                professional development.
-              </li>
-              <li>
-                I'm proud to showcase these certificates, a testament to my
-                dedication to continuous learning.
-              </li>
-            </ul>
-          </article>
-          <article class="blog cert">
-            <h3>Github</h3>
-            <p>
-              These are the certificates I achieved in Github over a period of
-              time.
-            </p>
-            <div class="carousel">
-              <div class="git-images carousel-track">
-                <!--Add or remove the comment to enable or disable the carousel-->
-                <!--<span class="float-left" onclick="changeCert()">&lt;</span
-                ><span class="float-right" onclick="changeCert()">&gt;</span>-->
-                <div class="git-cert-group">
-                  <img
-                    src="./images/git_GreatLearning certificate.png"
-                    width="500"
-                    height="500"
-                    alt="github-great-learning"
-                    class="github-cert"
-                    id="github-cert"
-                    data-cert="GL"
-                  />
+          <div class="certs">
+            <article class="blog cert">
+              <h3>Structure of a webpage and design</h3>
+              <p>
+                These are the certificates I achieved in Html & Css over a period of
+                time.
+              </p>
+              <img
+                src="./images/html certificate.png"
+                width="500"
+                height="500"
+                alt="html-cert"
+                class="html-cert"
+              />
+              <ul>
+                <li>
+                  These are the certificates I've earned over time, representing my
+                  journey in acquiring valuable skills and knowledge.
+                </li>
+                <li>
+                  Each of these certificates marks a significant milestone in my
+                  professional development.
+                </li>
+                <li>
+                  I'm proud to showcase these certificates, a testament to my
+                  dedication to continuous learning.
+                </li>
+              </ul>
+            </article>
+            <article class="blog cert">
+              <h3>Github</h3>
+              <p>
+                These are the certificates I achieved in Github over a period of
+                time.
+              </p>
+              <div class="carousel">
+                <div class="git-images carousel-track">
+                  <!--Add or remove the comment to enable or disable the carousel-->
+                  <!--<span class="float-left" onclick="changeCert()">&lt;</span
+                  ><span class="float-right" onclick="changeCert()">&gt;</span>-->
+                  <div class="git-cert-group">
+                    <img
+                      src="./images/git_GreatLearning certificate.png"
+                      width="500"
+                      height="500"
+                      alt="github-great-learning"
+                      class="github-cert"
+                      id="github-cert"
+                      data-cert="GL"
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
-            <ul>
-              <li>
-                From foundational courses to advanced specializations, these
-                certificates demonstrate my diverse skillset.
-              </li>
-              <li>
-                My collection of certificates reflects my commitment to staying
-                up-to-date in an ever-evolving industry.
-              </li>
-              <li>
-                Earning these certificates has not only expanded my knowledge but
-                also boosted my confidence in my abilities.
-              </li>
-            </ul>
-          </article>
-          <article class="blog cert">
-            <h3>Applying the functionalities</h3>
-            <p>
-              These are the certificates I achieved in Js over a period of time.
-            </p>
-            <img
-              src="./images/javascript DSA certificate.png"
-              width="500"
-              height="500"
-              alt="js-cert"
-              class="js-cert"
-            />
-            <ul>
-              <li>
-                More than just qualifications, these certificates represent my
-                passion for lifelong learning and self-improvement.
-              </li>
-              <li>
-                I believe these certificates showcase my potential and my
-                eagerness to take on new challenges.
-              </li>
-              <li>
-                As I continue to learn and grow, I look forward to adding more
-                certificates to this collection.
-              </li>
-              <li>
-                These certificates are a tangible representation of the hard work
-                and dedication I've invested in my professional growth.
-              </li>
-            </ul>
-          </article>
+              <ul>
+                <li>
+                  From foundational courses to advanced specializations, these
+                  certificates demonstrate my diverse skillset.
+                </li>
+                <li>
+                  My collection of certificates reflects my commitment to staying
+                  up-to-date in an ever-evolving industry.
+                </li>
+                <li>
+                  Earning these certificates has not only expanded my knowledge but
+                  also boosted my confidence in my abilities.
+                </li>
+              </ul>
+            </article>
+            <article class="blog cert">
+              <h3>Applying the functionalities</h3>
+              <p>
+                These are the certificates I achieved in Js over a period of time.
+              </p>
+              <img
+                src="./images/javascript DSA certificate.png"
+                width="500"
+                height="500"
+                alt="js-cert"
+                class="js-cert"
+              />
+              <ul>
+                <li>
+                  More than just qualifications, these certificates represent my
+                  passion for lifelong learning and self-improvement.
+                </li>
+                <li>
+                  I believe these certificates showcase my potential and my
+                  eagerness to take on new challenges.
+                </li>
+                <li>
+                  As I continue to learn and grow, I look forward to adding more
+                  certificates to this collection.
+                </li>
+                <li>
+                  These certificates are a tangible representation of the hard work
+                  and dedication I've invested in my professional growth.
+                </li>
+              </ul>
+            </article>
+          </div>
         </div>
       </section>
       <section id="about-me">
@@ -440,7 +457,7 @@
       </section>
       <section id="contact">
         <fieldset>
-          <legend><h2>Contact</h2></legend>
+          <legend><h2>Contact&nbsp;</h2></legend>
           <div class="form">
             <div class="email-img">
               <img src="./images/email.jpg" alt="email-img"/>
@@ -459,14 +476,14 @@
           <li>
             <a
               href="https://www.linkedin.com/in/raj-agarwal-584336222/"
-              target="_blank"
+              target="_blank" class="w-link"
               >LinkedIn</a
             >
           </li>
           <li>
-            <a href="https://github.com/Raj2902" target="_blank">Github</a>
+            <a class="w-link" href="https://github.com/Raj2902" target="_blank">Github</a>
           </li>
-          <li><a class="get-to-top" href="#top">Get to top</a></li>
+          <li><a class="w-link get-to-top" href="#top">Get to top</a></li>
         </ul>
         <p>Email : rajagarwalgood@gmail.com</p>
       </section>

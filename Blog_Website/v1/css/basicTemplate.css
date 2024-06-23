@@ -75,6 +75,12 @@ a{
 li{
     list-style: none;
 }
+.temp{
+    display: block;
+}
+.temp-form{
+    float: right;
+}
 .contact-links{
     display: flex;
     justify-content: space-evenly;

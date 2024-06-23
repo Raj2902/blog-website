@@ -8,3 +8,14 @@ function changeCert() {
     cert_img.setAttribute("data-cert", "GL");
   }
 }
+function temp_select() {
+  let data = document.getElementById("temp").value;
+  if (data === "advance") {
+    alert("we are working on this template...");
+  } else if (data === "intermidiate") {
+    document.getElementById("stylesheet").href =
+      "./css/intermidiateTemplate.css";
+  } else {
+    document.getElementById("stylesheet").href = "./css/basicTemplate.css";
+  }
+}
