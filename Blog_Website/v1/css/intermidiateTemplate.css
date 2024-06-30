@@ -41,7 +41,6 @@ footer{
 }
 .get-to-top{
     text-decoration: underline;
-    color:#0000ffa8 !important;
 }
 .get-to-top:hover{
     color: blue !important;
@@ -152,13 +151,21 @@ a:hover{
 .contact-links li a:hover{
     color: white;
 }
+.space-to-right{
+    margin-right: 10px;
+}
+.email-p{
+    padding-left:10px;
+}
 li{
     list-style: none;
 }
 .contact-links{
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.contact-links li{
+    list-style: none;
 }
 .group-skills{
     display: flex;
@@ -252,6 +259,15 @@ label{
         left:1400px;
     }
 }
+.skill-drop, .skill-drop-cert{
+    display: none;
+    position: absolute;
+    background: #beb2a3;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+    right: 26px;
+}
 /*  media queries for responsive design*/
 @media (max-width:426px) and (min-width:320px){
 .github-cert,.html-cert,.js-cert,iframe{
@@ -303,5 +319,22 @@ nav{
     }
     nav{
         display: flex;
+    }
+    .flex-contact-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-links{
+        display: flex;
+        justify-content: space-around;
+    }
+    .skill-drop, .skill-drop-cert{
+        display: none;
+        position: absolute;
+        float: right;
+        background: #8b8b8b;
+        padding: 0;
+        width: 15%;
+        text-align: center;
     }
 }

@@ -1,0 +1,250 @@
+/*making text white as default of the whole page.*/
+/*I will use theme as red and white*/
+*{
+    color: white;
+}
+/*making background red shade*/
+body{
+    background-image: linear-gradient(to left, #f00, black);
+    margin: 0;
+    font-family: system-ui,cursive;
+}
+/*making the image fit in the div*/
+.email-img{
+    width: 50%;
+}
+.email-img img{
+    width: 100%;
+}
+/*make the template select tag as black to stand out of white*/
+select{
+    color: black;
+}
+select option{
+    color: black;
+}
+/*fitting iframe to fill inside the parent div*/
+iframe{
+    width: -webkit-fill-available;
+}
+/*fitting the certificate inside the parent div*/
+.github-cert,.html-cert,.js-cert,.github-cert-testdome{
+    width: -webkit-fill-available;
+    height: 35%;
+    padding: 5%;
+}
+/*making footer background black*/
+footer{
+    background: black;
+}
+/*adding minimum margin of 8px to the header and main content*/
+.headerMain{
+    margin: 8px;
+}
+/*make h2 xx large*/
+h2{
+    font-size: xx-large;
+    letter-spacing: 2px;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+}
+.skills{
+    animation-name: stretch;
+}
+.certificates{
+    animation-name: stretch2;
+}
+/*stretch for skills*/
+@keyframes stretch{
+    from {letter-spacing: 2px;}
+    to {letter-spacing: 30px;}
+}
+/*stretch for certificaes*/
+@keyframes stretch2{
+    from {letter-spacing: 2px;}
+    to {letter-spacing: 8px;}
+}
+/*make h1 xxx large*/
+h1{
+    font-size: xx-large;
+    letter-spacing: 5px;
+    font-family: math;
+}
+/*pop out header from the rest of the screen by using margin*/
+header{
+    border: 3px solid black;
+    box-shadow: 10px 0px black;
+    border-bottom: 10px solid black;
+}
+/*list style circle*/
+li{
+    list-style: circle;
+}
+.header-p{
+    background-image: linear-gradient(45deg, #e4e0e0, transparent);
+    color: black;
+    padding: 10%;
+}
+/*removing underline from anchor*/
+a{
+    text-decoration: none;
+}
+h3{
+    font-size: x-large;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    animation: color-change 5s linear 0s infinite alternate;
+}
+@keyframes color-change {
+    from{color:rgb(0, 0, 0);}
+    to{color: #cc0000;}
+}
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+.blog{
+    border: 3px solid black;
+    box-shadow: 0 3px black;
+    border-bottom: 10px solid black;
+}
+label{
+    display: none;
+}
+input,textarea{
+    width: -webkit-fill-available;
+    color: black;
+    padding: 3%;
+    border-radius: 14px;
+    border: none;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content : center;
+}
+.submit{
+    width: 30%;
+    background-color: black;
+    color: white;
+}
+/*and shadow to bold*/
+b{
+    color: black;
+    text-shadow: 1px -1px white;
+}
+.temp{
+    display: block;
+}
+a:hover{
+    color: black;
+    background-color: white;
+    padding: 1%;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formSpace{
+    width: 100%;
+    margin-top: 10%;
+}
+img{
+    margin-top: 10%;
+}
+i{
+    padding-left: 1%;
+}
+.skill-nav{
+    margin-left: 3%;
+    border-radius: 12px;
+}
+.skill-drop, .skill-drop-cert{
+    display: none;
+    position: absolute;
+    background: #8b8b8b;
+    padding: 0;
+    width: 30%;
+    text-align: center;
+}
+.skill-item{
+    color: black;
+    list-style: none;
+    padding: 5%;
+}
+.skill-item a{
+    color: black;
+}
+.skill-item:hover{
+    background-color: white;
+    color:black;
+}
+.space-to-right{
+    margin-right: 10px;
+}
+.email-p{
+    padding-left:40px;
+}
+.contact-links{
+    padding-top: 10px;
+}
+.contact-links li{
+    list-style: none;
+    width: 50%;
+}
+center{
+    padding: 10px;
+}
+.rotate-img{
+    transform: rotateY(0deg);
+    animation-name: r;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.text-over-img-html,.text-over-img-git,.text-over-img-JS{
+    position: absolute;
+    color: white;
+    background-color: #d800009e;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    text-align: center;
+    padding: 5% 0px;
+    display: none;
+}
+.multiple-images,.git-cert-group{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes r {
+    from{ transform: rotateY(0deg);}
+    to{ transform: rotateY(360deg);}
+}
+@media screen and (min-width: 768px) {
+    .skill-drop, .skill-drop-cert{
+        display: none;
+        position: absolute;
+        background: #8b8b8b;
+        padding: 0;
+        width: 15%;
+        text-align: center;
+    }
+    .flex-contact-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-links{
+        display: flex;
+        justify-content: space-around;
+    }
+  }

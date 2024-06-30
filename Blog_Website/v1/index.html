@@ -17,11 +17,16 @@
       href="./favicon_io/favicon-32x32.png"
       type="image/x-icon"
     />
+    <!--tailwind csss-->
+    <link rel="stylesheet" href="./src/output.css">
     <!--Remove or add the comments from the link to enable or disable the styling on the webpage.-->
     <!--Basic template-->
-    <link id="stylesheet" rel="stylesheet" href="./css/basicTemplate.css"/>
+    <!--<link id="stylesheet" rel="stylesheet" href="./css/basicTemplate.css"/>-->
     <!--Intermidiate template-->
     <!--<link id="stylesheet" rel="stylesheet" href="./css/intermidiateTemplate.css" />-->
+    <!--Advanced template-->
+    <link id="stylesheet" rel="stylesheet" href="./css/advanceTemplate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>From Newbie to Ninja: Conquering the Code with Raj</title>
   </head>
   <body id="top">
@@ -32,448 +37,489 @@
       <span class="b5">&nbsp;</span>
       <span class="b6">&nbsp;</span>
     </div>
-    <header>
-      <form class="temp-form" action="#">
-        <label class="temp" for="template">Select Template :</label>
-      <select name="template" id="temp" onchange="temp_select()">
-        <option value="basic">Basic</option>
-        <option value="intermidiate">Intermidiate</option>
-        <option value="advance">Advance</option>
-      </select>
-      </form>
-      <h1>Coding My Way Up: Adventures in Web Development</h1>
-      <p>
-        Follow my journey from web development newbie to a Full Stack Web
-        Developer. This blog chronicles my adventures in coding, from learning
-        the basics to tackling real-world projects. Here, I'll share my skills,
-        experience, and the lessons I pick up along the way. Join me as I climb
-        the coding ladder, one line at a time!
-      </p>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-        </ul>
-        <ul>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
-        <ul>
-          <li><a href="#certificates">Certificates</a></li>
-        </ul>
-        <ul>
-          <li><a href="#about-me">About me</a></li>
-        </ul>
-        <ul>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="skills">
-        <h2>Skills</h2>
-        <div class="group-skills">
-          <article class="blog">
-            <div class="images">
-              <img
-              src="./images/html.jpg"
-              width="100"
-              height="100"
-              alt="html-img"
-            />
-            </div>
-            <h3>Html</h3>
-            <p>
-              2 years back Html was the first language that I learned to start my
-              web development journey, learning html was an easy task for me.
-            </p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/MDLn5-zSQQI?si=kQv8szFjA_z12J2a"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe
-            ><br />
-            <b>Challenges I faced learning html.</b>
+    <div class="headerMain">
+      <header>
+        <form class="temp-form" action="#">
+          <label class="temp" for="template">Select Template :</label>
+        <select name="template" id="temp" onchange="temp_select()">
+          <option value="basic">Basic</option>
+          <option value="intermidiate">Intermidiate</option>
+          <option value="advance">Advance</option>
+        </select>
+        </form>
+        <h1>Coding My Way Up: Adventures in Web Development</h1>
+        <div class="group-p-nav">
+          <p class="header-p">
+            Follow my journey from web development newbie to a Full Stack Web
+            Developer. This blog chronicles my adventures in coding, from learning
+            the basics to tackling real-world projects. Here, I'll share my skills,
+            experience, and the lessons I pick up along the way. Join me as I climb
+            the coding ladder, one line at a time!
+          </p>
+          <nav>
             <ul>
-              <li>
-                <b>Understanding the Syntax:</b> HTML uses tags and attributes to
-                define the structure and content of a web page. Memorizing the
-                tags and how to use them correctly can take some practice.
-              </li>
-              <li>
-                <b>Cascading Stylesheet Confusion (CSS):</b> While HTML defines
-                the structure, CSS controls the visual presentation. It's easy to
-                get tripped up on how HTML and CSS work together, especially when
-                your website isn't rendering as expected.
-              </li>
-              <li>
-                <b>Debugging Errors:</b> Typos, missing quotation marks, or
-                incorrect tag placement can all lead to errors that prevent your
-                page from displaying correctly. Figuring out where the errors are
-                can be frustrating.
-              </li>
-              <li>
-                <b>Visualizing the Layout:</b> HTML code itself isn't very visual.
-                It can be challenging to imagine how the page will look based
-                solely on the code, especially for beginners.
-              </li>
-              <li>
-                <b>Keeping Up with the Latest:</b> HTML standards and best
-                practices can evolve over time. It's important to stay updated on
-                changes, which might require revisiting concepts you thought you
-                had mastered.
-              </li>
+              <li><a href="index.html">Home</a></li>
             </ul>
-          </article>
-          <article class="blog">
-            <div class="images">
-              <img
-              src="./images/css.jfif"
-              width="100"
-              height="100"
-              alt="css"
-              class="styling"
-            /><img
-              src="./images/bootstrap.png"
-              width="100"
-              height="100"
-              alt="bootstrap"
-              class="styling"
-            /><img
-              src="./images/responsive.jfif"
-              width="100"
-              height="100"
-              alt="responsive"
-              class="styling"
-            />
-            </div>
-            <h3>Styling</h3>
-            <p>
-              After successfull completion of html, I started to understand the
-              css and bootstrap part on how to design you webpage, how to style
-              your webpage and how to make it responsive so that it looks good and
-              be interactive on all the platforms.
-            </p>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=U5d71-PgSpOWbWL_"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe
-            ><br />
-            <b
-              >Challenges I faced learning css, bootstrap and a responsive website
-            </b>
-            <p><b>CSS Challenges:</b></p>
             <ul>
-              <li>
-                <b>Specificity Wars:</b> CSS can get tricky when multiple styles
-                apply to the same element. Understanding specificity rules and how
-                to write more specific selectors can be frustrating at first.
+              <li><a href="#skills">Skills</a>
+                <i id="skill-drop-id" onmouseover="showDropdown()" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
               </li>
-              <li>
-                <b>Visualizing Cascading:</b> Grasping how styles "cascade" down
-                the HTML document and how inheritance works can be challenging,
-                especially when trying to achieve a particular look.
-              </li>
-              <li>
-                <b>Cross-Browser Compatibility:</b> Different browsers may render
-                CSS slightly differently. Ensuring your styles look consistent
-                across various browsers can require extra testing and adjustments.
-              </li>
-              <li>
-                <b>Positioning and Layout:</b> CSS offers various positioning
-                properties (absolute, relative, etc.) that can be complex to
-                master. Creating intricate layouts and aligning elements precisely
-                can take practice.
-              </li>
-              <li>
-                HTML consists of elements created using opening and closing tags
-                (written in angle brackets < and >).
-              </li>
-              <li>
-                These elements define different sections of your webpage content.
-                Example of an Element: &lt;p&gt;This is a paragraph.&lt;/p&gt;
-                Here, &lt;p&gt;and &lt;/p&gt; are the opening and closing tags for
-                the paragraph element, and "This is a paragraph" is the content
-                displayed within that element. Works with CSS and JavaScript:
-                While HTML defines the structure, CSS (Cascading Style Sheets)
-                controls the visual appearance of the webpage (fonts, colors,
-                layouts). JavaScript adds interactivity and dynamic behavior
-                (animations, form validation). Benefits: Easy to learn, widely
-                supported by all web browsers, forms the foundation for creating
-                webpages.
-              </li>
+              <ul onmouseover="showDropdown()" onmouseout="hideDropdown()" class="skill-drop" id="skill-drop">
+                <li class="skill-item"><a href="#html">Html</a></li>
+                <li class="skill-item"><a href="#styling">Styling</a></li>
+                <li class="skill-item"><a href="#interactive">Interactive</a></li>
+              </ul>
             </ul>
-            <p><b>Bootstrap Challenges:</b></p>
             <ul>
-              <li>
-                <b>Learning the Framework:</b> Bootstrap has a wide range of
-                components and classes. Familiarizing yourself with the
-                documentation and remembering all the options can be overwhelming
-                at first.
+              <li><a href="#certificates">Certificates</a>
+                <i id="cert-drop-id" onmouseover="showDropdown_cert()" class="fa fa-chevron-circle-down" aria-hidden="true"></i>
               </li>
-              <li>
-                <b>Overusing Classes:</b> It's tempting to rely heavily on
-                Bootstrap's pre-built styles, potentially leading to repetitive or
-                generic-looking websites. Learning to customize Bootstrap
-                effectively is key.
-              </li>
-              <li>
-                <b>Understanding Grid System:</b> Bootstrap's grid system provides
-                a powerful way to create responsive layouts. However, wrapping
-                your head around grid columns, rows, and breakpoints can have a
-                learning curve.
-              </li>
+              <ul onmouseover="showDropdown_cert()" onmouseout="hideDropdown_cert()" class="skill-drop-cert" id="skill-drop-cert">
+                <li class="skill-item"><a href="#design">Design</a></li>
+                <li class="skill-item"><a href="#github">Github</a></li>
+                <li class="skill-item"><a href="#interaction">Interaction</a></li>
+              </ul>
             </ul>
-            <p><b>Responsive Website Challenges:</b></p>
             <ul>
-              <li>
-                <b>Media Queries:</b> Media queries are essential for responsive
-                design, allowing you to adjust styles based on screen size.
-                Writing effective media queries for various devices and
-                orientations can be challenging.
-              </li>
-              <li>
-                <b>Balancing Mobile vs. Desktop:</b> Balancing a website's optimal
-                layout for both mobile and desktop can be tricky. You might need
-                to rethink element placement, navigation, and content organization
-                for different screen sizes.
-              </li>
-              <li>
-                <b>Responsive Images and Videos:</b> Ensuring images and videos
-                adapt to different screen sizes while maintaining quality can be
-                an extra layer of complexity.
-              </li>
+              <li><a href="#about-me">About me</a></li>
             </ul>
-          </article>
-          <article class="blog">
-            <div class="images">
-              <img
-              src="./images/js.jfif"
-              width="100"
-              height="100"
-              alt="js"
-              class="styling"
-            />
-            </div>
-            <h3>Making website interactive</h3>
-            <p><b>Core Concepts:</b></p>
             <ul>
-              <li>
-                <b>Understanding the Syntax:</b> JavaScript has its own syntax for
-                variables, functions, control flow (if/else, loops), and
-                object-oriented programming concepts. Grasping these fundamentals
-                can take practice.
-              </li>
-              <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/B7wHpNUUT4Y?si=xwvFOZj3l-bN8CN2"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-              <li>
-                <b>Scope and Closures:</b> JavaScript's concept of scope (where
-                variables are accessible) and closures (functions that remember
-                their enclosing scope's variables) can be tricky to understand at
-                first.
-              </li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-            <p><b>Asynchronous Programming:</b></p>
-            <ul>
-              <li>
-                <b>Callbacks and Promises:</b> JavaScript heavily relies on
-                asynchronous programming, where operations might not happen
-                immediately. Dealing with callbacks (functions passed to be
-                executed later) and promises (objects representing the eventual
-                completion of an asynchronous operation) can be confusing.
-              </li>
-              <li>
-                <b>Handling Errors:</b> Asynchronous code can introduce new types
-                of errors. Understanding how to handle asynchronous errors
-                effectively is crucial.
-              </li>
-            </ul>
-            <p><b>Object-Oriented Programming (OOP):</b></p>
-            <ul>
-              <li>
-                <b>Prototypal Inheritance vs. Classical Inheritance:</b>
-                JavaScript uses a prototypal inheritance model which can be
-                different from classical inheritance found in other languages. It
-                takes time to get comfortable with this approach.
-              </li>
-              <li>
-                <b>'this' Keyword:</b> The this keyword in JavaScript can have
-                different meanings depending on the context, which can lead to
-                confusion.
-              </li>
-            </ul>
-            <p><b>The DOM and Browser Environment:</b></p>
-            <ul>
-              <li>
-                <b>DOM Manipulation:</b> The Document Object Model (DOM)
-                represents the webpage structure. Interacting with the DOM using
-                JavaScript to add, remove, or modify elements can be complex,
-                especially for beginners.
-              </li>
-              <li>
-                <b>Browser Inconsistencies:</b> Different browsers might have
-                slight variations in how they interpret JavaScript code. Ensuring
-                cross-browser compatibility can add complexity.
-              </li>
-            </ul>
-          </article>
-        </section>
-        <section id="certificates">
-          <h2>Certificates</h2>
-          <div class="certs">
-            <article class="blog cert">
-              <h3>Structure of a webpage and design</h3>
-              <p>
-                These are the certificates I achieved in Html & Css over a period of
-                time.
-              </p>
-              <img
-                src="./images/html certificate.png"
-                width="500"
-                height="500"
-                alt="html-cert"
-                class="html-cert"
+          </nav>
+        </div>
+      </header>
+      <main>
+        <section id="skills">
+          <h2 class="skills">Skills</h2>
+          <div class="group-skills">
+            <article id="html" class="blog">
+              <div class="images">
+                <img
+                class="rotate-img"
+                src="./images/html.jpg"
+                width="100"
+                height="100"
+                alt="html-img"
               />
+              </div>
+              <h3>Html</h3>
+              <p>
+                2 years back Html was the first language that I learned to start my
+                web development journey, learning html was an easy task for me.
+              </p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/MDLn5-zSQQI?si=kQv8szFjA_z12J2a"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe
+              ><br />
+              <b>Challenges I faced learning html.</b>
               <ul>
                 <li>
-                  These are the certificates I've earned over time, representing my
-                  journey in acquiring valuable skills and knowledge.
+                  <b>Understanding the Syntax:</b> HTML uses tags and attributes to
+                  define the structure and content of a web page. Memorizing the
+                  tags and how to use them correctly can take some practice.
                 </li>
                 <li>
-                  Each of these certificates marks a significant milestone in my
-                  professional development.
+                  <b>Cascading Stylesheet Confusion (CSS):</b> While HTML defines
+                  the structure, CSS controls the visual presentation. It's easy to
+                  get tripped up on how HTML and CSS work together, especially when
+                  your website isn't rendering as expected.
                 </li>
                 <li>
-                  I'm proud to showcase these certificates, a testament to my
-                  dedication to continuous learning.
+                  <b>Debugging Errors:</b> Typos, missing quotation marks, or
+                  incorrect tag placement can all lead to errors that prevent your
+                  page from displaying correctly. Figuring out where the errors are
+                  can be frustrating.
+                </li>
+                <li>
+                  <b>Visualizing the Layout:</b> HTML code itself isn't very visual.
+                  It can be challenging to imagine how the page will look based
+                  solely on the code, especially for beginners.
+                </li>
+                <li>
+                  <b>Keeping Up with the Latest:</b> HTML standards and best
+                  practices can evolve over time. It's important to stay updated on
+                  changes, which might require revisiting concepts you thought you
+                  had mastered.
                 </li>
               </ul>
             </article>
-            <article class="blog cert">
-              <h3>Github</h3>
+            <article id="styling" class="blog">
+              <div class="images">
+                <img class="rotate-img"
+                src="./images/css.jfif"
+                width="100"
+                height="100"
+                alt="css"
+                class="styling"
+              /><img class="rotate-img"
+                src="./images/bootstrap.png"
+                width="100"
+                height="100"
+                alt="bootstrap"
+                class="styling"
+              /><img class="rotate-img"
+                src="./images/responsive.jfif"
+                width="100"
+                height="100"
+                alt="responsive"
+                class="styling"
+              />
+              </div>
+              <h3>Styling</h3>
               <p>
-                These are the certificates I achieved in Github over a period of
-                time.
+                After successfull completion of html, I started to understand the
+                css and bootstrap part on how to design you webpage, how to style
+                your webpage and how to make it responsive so that it looks good and
+                be interactive on all the platforms.
               </p>
-              <div class="carousel">
-                <div class="git-images carousel-track">
-                  <!--Add or remove the comment to enable or disable the carousel-->
-                  <!--<span class="float-left" onclick="changeCert()">&lt;</span
-                  ><span class="float-right" onclick="changeCert()">&gt;</span>-->
-                  <div class="git-cert-group">
-                    <img
-                      src="./images/git_GreatLearning certificate.png"
-                      width="500"
-                      height="500"
-                      alt="github-great-learning"
-                      class="github-cert"
-                      id="github-cert"
-                      data-cert="GL"
-                    />
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=U5d71-PgSpOWbWL_"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe
+              ><br />
+              <b
+                >Challenges I faced learning css, bootstrap and a responsive website
+              </b>
+              <p><b>CSS Challenges:</b></p>
+              <ul>
+                <li>
+                  <b>Specificity Wars:</b> CSS can get tricky when multiple styles
+                  apply to the same element. Understanding specificity rules and how
+                  to write more specific selectors can be frustrating at first.
+                </li>
+                <li>
+                  <b>Visualizing Cascading:</b> Grasping how styles "cascade" down
+                  the HTML document and how inheritance works can be challenging,
+                  especially when trying to achieve a particular look.
+                </li>
+                <li>
+                  <b>Cross-Browser Compatibility:</b> Different browsers may render
+                  CSS slightly differently. Ensuring your styles look consistent
+                  across various browsers can require extra testing and adjustments.
+                </li>
+                <li>
+                  <b>Positioning and Layout:</b> CSS offers various positioning
+                  properties (absolute, relative, etc.) that can be complex to
+                  master. Creating intricate layouts and aligning elements precisely
+                  can take practice.
+                </li>
+                <li>
+                  HTML consists of elements created using opening and closing tags
+                  (written in angle brackets < and >).
+                </li>
+                <li>
+                  These elements define different sections of your webpage content.
+                  Example of an Element: &lt;p&gt;This is a paragraph.&lt;/p&gt;
+                  Here, &lt;p&gt;and &lt;/p&gt; are the opening and closing tags for
+                  the paragraph element, and "This is a paragraph" is the content
+                  displayed within that element. Works with CSS and JavaScript:
+                  While HTML defines the structure, CSS (Cascading Style Sheets)
+                  controls the visual appearance of the webpage (fonts, colors,
+                  layouts). JavaScript adds interactivity and dynamic behavior
+                  (animations, form validation). Benefits: Easy to learn, widely
+                  supported by all web browsers, forms the foundation for creating
+                  webpages.
+                </li>
+              </ul>
+              <p><b>Bootstrap Challenges:</b></p>
+              <ul>
+                <li>
+                  <b>Learning the Framework:</b> Bootstrap has a wide range of
+                  components and classes. Familiarizing yourself with the
+                  documentation and remembering all the options can be overwhelming
+                  at first.
+                </li>
+                <li>
+                  <b>Overusing Classes:</b> It's tempting to rely heavily on
+                  Bootstrap's pre-built styles, potentially leading to repetitive or
+                  generic-looking websites. Learning to customize Bootstrap
+                  effectively is key.
+                </li>
+                <li>
+                  <b>Understanding Grid System:</b> Bootstrap's grid system provides
+                  a powerful way to create responsive layouts. However, wrapping
+                  your head around grid columns, rows, and breakpoints can have a
+                  learning curve.
+                </li>
+              </ul>
+              <p><b>Responsive Website Challenges:</b></p>
+              <ul>
+                <li>
+                  <b>Media Queries:</b> Media queries are essential for responsive
+                  design, allowing you to adjust styles based on screen size.
+                  Writing effective media queries for various devices and
+                  orientations can be challenging.
+                </li>
+                <li>
+                  <b>Balancing Mobile vs. Desktop:</b> Balancing a website's optimal
+                  layout for both mobile and desktop can be tricky. You might need
+                  to rethink element placement, navigation, and content organization
+                  for different screen sizes.
+                </li>
+                <li>
+                  <b>Responsive Images and Videos:</b> Ensuring images and videos
+                  adapt to different screen sizes while maintaining quality can be
+                  an extra layer of complexity.
+                </li>
+              </ul>
+            </article>
+            <article id="interactive" class="blog">
+              <div class="images">
+                <img class="rotate-img"
+                src="./images/js.jfif"
+                width="100"
+                height="100"
+                alt="js"
+                class="styling"
+              />
+              </div>
+              <h3>Making website interactive</h3>
+              <p><b>Core Concepts:</b></p>
+              <ul>
+                <li>
+                  <b>Understanding the Syntax:</b> JavaScript has its own syntax for
+                  variables, functions, control flow (if/else, loops), and
+                  object-oriented programming concepts. Grasping these fundamentals
+                  can take practice.
+                </li>
+                <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/B7wHpNUUT4Y?si=xwvFOZj3l-bN8CN2"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+                <li>
+                  <b>Scope and Closures:</b> JavaScript's concept of scope (where
+                  variables are accessible) and closures (functions that remember
+                  their enclosing scope's variables) can be tricky to understand at
+                  first.
+                </li>
+              </ul>
+              <p><b>Asynchronous Programming:</b></p>
+              <ul>
+                <li>
+                  <b>Callbacks and Promises:</b> JavaScript heavily relies on
+                  asynchronous programming, where operations might not happen
+                  immediately. Dealing with callbacks (functions passed to be
+                  executed later) and promises (objects representing the eventual
+                  completion of an asynchronous operation) can be confusing.
+                </li>
+                <li>
+                  <b>Handling Errors:</b> Asynchronous code can introduce new types
+                  of errors. Understanding how to handle asynchronous errors
+                  effectively is crucial.
+                </li>
+              </ul>
+              <p><b>Object-Oriented Programming (OOP):</b></p>
+              <ul>
+                <li>
+                  <b>Prototypal Inheritance vs. Classical Inheritance:</b>
+                  JavaScript uses a prototypal inheritance model which can be
+                  different from classical inheritance found in other languages. It
+                  takes time to get comfortable with this approach.
+                </li>
+                <li>
+                  <b>'this' Keyword:</b> The this keyword in JavaScript can have
+                  different meanings depending on the context, which can lead to
+                  confusion.
+                </li>
+              </ul>
+              <p><b>The DOM and Browser Environment:</b></p>
+              <ul>
+                <li>
+                  <b>DOM Manipulation:</b> The Document Object Model (DOM)
+                  represents the webpage structure. Interacting with the DOM using
+                  JavaScript to add, remove, or modify elements can be complex,
+                  especially for beginners.
+                </li>
+                <li>
+                  <b>Browser Inconsistencies:</b> Different browsers might have
+                  slight variations in how they interpret JavaScript code. Ensuring
+                  cross-browser compatibility can add complexity.
+                </li>
+              </ul>
+            </article>
+          </section>
+          <section id="certificates">
+            <h2 class="certificates">Certificates</h2>
+            <div class="certs">
+              <article id="design" class="blog cert">
+                <h3>Structure of a webpage and design</h3>
+                <p>
+                  These are the certificates I achieved in Html & Css over a period of
+                  time.
+                </p>
+                <div class="multiple-images"
+                onmouseleave="hideOverlayHtml()">
+                  <img
+                  src="./images/html certificate.png"
+                  width="500"
+                  height="500"
+                  alt="html-cert"
+                  class="html-cert"
+                  id="html-cert"
+                  onmouseover="showOverlayHtml()"
+                  ondrag="changeCertHtml()"
+                />
+                <p class="text-over-img-html" id="text-over-img-html">Drag to view more.</p>
+                </div>
+                <ul>
+                  <li>
+                    These are the certificates I've earned over time, representing my
+                    journey in acquiring valuable skills and knowledge.
+                  </li>
+                  <li>
+                    Each of these certificates marks a significant milestone in my
+                    professional development.
+                  </li>
+                  <li>
+                    I'm proud to showcase these certificates, a testament to my
+                    dedication to continuous learning.
+                  </li>
+                </ul>
+              </article>
+              <article id="github" class="blog cert">
+                <h3>Github</h3>
+                <p>
+                  These are the certificates I achieved in Github over a period of
+                  time.
+                </p>
+                <div class="carousel">
+                  <div class="git-images carousel-track">
+                    <!--Add or remove the comment to enable or disable the carousel-->
+                    <!--<span class="float-left" onclick="changeCert()">&lt;</span
+                    ><span class="float-right" onclick="changeCert()">&gt;</span>-->
+                    <div class="git-cert-group" onmouseleave="hideOverlayGit()">
+                      <img
+                        src="./images/git_GreatLearning certificate.png"
+                        width="500"
+                        height="500"
+                        alt="github-great-learning"
+                        class="github-cert"
+                        id="github-cert"
+                        data-cert="GL"
+                        data-git-cert="1"
+                        onmouseover="showOverlayGit()"
+                        ondrag="changeCertGit()"
+                      />
+                      <p class="text-over-img-git" id="text-over-img-git">Drag to view more.</p>
+                    </div>
                   </div>
                 </div>
+                <ul>
+                  <li>
+                    From foundational courses to advanced specializations, these
+                    certificates demonstrate my diverse skillset.
+                  </li>
+                  <li>
+                    My collection of certificates reflects my commitment to staying
+                    up-to-date in an ever-evolving industry.
+                  </li>
+                  <li>
+                    Earning these certificates has not only expanded my knowledge but
+                    also boosted my confidence in my abilities.
+                  </li>
+                </ul>
+              </article>
+              <article id="interaction" class="blog cert">
+                <h3>Applying the functionalities</h3>
+                <p>
+                  These are the certificates I achieved in Js over a period of time.
+                </p>
+                <div class="multiple-images"
+                onmouseleave="hideOverlayJS()">
+                <img
+                  src="./images/javascript DSA certificate.png"
+                  width="500"
+                  height="500"
+                  alt="js-cert"
+                  class="js-cert"
+                  onmouseover="showOverlayJS()"
+                  ondrag="changeCertJS()"
+                />
+                <p class="text-over-img-JS" id="text-over-img-JS">Drag to view more.</p>
               </div>
-              <ul>
-                <li>
-                  From foundational courses to advanced specializations, these
-                  certificates demonstrate my diverse skillset.
-                </li>
-                <li>
-                  My collection of certificates reflects my commitment to staying
-                  up-to-date in an ever-evolving industry.
-                </li>
-                <li>
-                  Earning these certificates has not only expanded my knowledge but
-                  also boosted my confidence in my abilities.
-                </li>
-              </ul>
-            </article>
-            <article class="blog cert">
-              <h3>Applying the functionalities</h3>
-              <p>
-                These are the certificates I achieved in Js over a period of time.
-              </p>
-              <img
-                src="./images/javascript DSA certificate.png"
-                width="500"
-                height="500"
-                alt="js-cert"
-                class="js-cert"
-              />
-              <ul>
-                <li>
-                  More than just qualifications, these certificates represent my
-                  passion for lifelong learning and self-improvement.
-                </li>
-                <li>
-                  I believe these certificates showcase my potential and my
-                  eagerness to take on new challenges.
-                </li>
-                <li>
-                  As I continue to learn and grow, I look forward to adding more
-                  certificates to this collection.
-                </li>
-                <li>
-                  These certificates are a tangible representation of the hard work
-                  and dedication I've invested in my professional growth.
-                </li>
-              </ul>
-            </article>
-          </div>
-        </div>
-      </section>
-      <section id="about-me">
-        <h2>About Me</h2>
-        <p>
-          Hi, there my name is Raj Agarwal and as a web developer, I'm
-          constantly striving to bridge the gap between creativity and
-          functionality. I'm excited to share some of the challenges I encounter
-          on this journey. Whether it's staying up-to-date with the
-          ever-evolving landscape of web technologies, tackling complex
-          debugging issues, or navigating the intricacies of responsive design,
-          there's always something new to learn and conquer. But the
-          satisfaction of seeing my code come to life as a user-friendly and
-          visually appealing website makes it all worthwhile. Here, I hope to
-          connect with other developers, share my experiences, and learn from
-          the challenges they face as well.
-        </p>
-      </section>
-      <section id="contact">
-        <fieldset>
-          <legend><h2>Contact&nbsp;</h2></legend>
-          <div class="form">
-            <div class="email-img">
-              <img src="./images/email.jpg" alt="email-img"/>
+                <ul>
+                  <li>
+                    More than just qualifications, these certificates represent my
+                    passion for lifelong learning and self-improvement.
+                  </li>
+                  <li>
+                    I believe these certificates showcase my potential and my
+                    eagerness to take on new challenges.
+                  </li>
+                  <li>
+                    As I continue to learn and grow, I look forward to adding more
+                    certificates to this collection.
+                  </li>
+                  <li>
+                    These certificates are a tangible representation of the hard work
+                    and dedication I've invested in my professional growth.
+                  </li>
+                </ul>
+              </article>
             </div>
-            <div class="formSpace"><form action="#">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="Name" required><br/><br/>
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="Email" required><br/><br/>
-              <textarea name="message" id="mesage" required>Enter your message here...</textarea><br><br>
-              <input class="submit" type="submit" value="send"/>
-            </form></div>
-          </div>
-        </fieldset>
+        </section>
+        <section id="about-me">
+          <h2 class="certificates">About Me</h2>
+          <p class="header-p">
+            Hi, there my name is Raj Agarwal and as a web developer, I'm
+            constantly striving to bridge the gap between creativity and
+            functionality. I'm excited to share some of the challenges I encounter
+            on this journey. Whether it's staying up-to-date with the
+            ever-evolving landscape of web technologies, tackling complex
+            debugging issues, or navigating the intricacies of responsive design,
+            there's always something new to learn and conquer. But the
+            satisfaction of seeing my code come to life as a user-friendly and
+            visually appealing website makes it all worthwhile. Here, I hope to
+            connect with other developers, share my experiences, and learn from
+            the challenges they face as well.
+          </p>
+        </section>
+        <section id="contact">
+          <fieldset>
+            <legend><h2 class="certificates">Contact&nbsp;</h2></legend>
+            <div class="form">
+              <div class="email-img">
+                <img src="./images/email.jpg" alt="email-img"/>
+              </div>
+              <div class="formSpace"><form action="#">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name" required><br/><br/>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required><br/><br/>
+                <textarea name="message" id="mesage" required>Enter your message here...</textarea><br><br>
+                <input class="submit" type="submit" value="send"/>
+              </form></div>
+            </div>
+          </fieldset>
+        </section>
+      </main>
+    </div>
+  </div>
+    <footer>
+      <div class="flex-contact-links">
         <ul class="contact-links">
           <li>
+            <i class=" space-to-right fa fa-linkedin" aria-hidden="true"></i>
             <a
               href="https://www.linkedin.com/in/raj-agarwal-584336222/"
               target="_blank" class="w-link"
@@ -481,14 +527,15 @@
             >
           </li>
           <li>
+            <i class="space-to-right fa fa-github" aria-hidden="true"></i>
             <a class="w-link" href="https://github.com/Raj2902" target="_blank">Github</a>
           </li>
-          <li><a class="w-link get-to-top" href="#top">Get to top</a></li>
+          <li>
+            <i class="space-to-right fa fa-arrow-up" aria-hidden="true"></i>
+            <a class="w-link get-to-top" href="#top">Get to top</a></li>
         </ul>
-        <p>Email : rajagarwalgood@gmail.com</p>
-      </section>
-    </main>
-    <footer>
+        <p class="email-p"><i class="space-to-right fa fa-envelope-o" aria-hidden="true"></i><span>rajagarwalgood@gmail.com</span></p>
+      </div>
       <hr />
       <center>Copyright @ 2024 From Newbie to Ninja</center>
     </footer>
