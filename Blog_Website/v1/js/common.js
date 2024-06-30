@@ -1,3 +1,8 @@
+const git_Certs = [
+  "./images/git_GreatLearning certificate.png",
+  "./images/git_testdome certificate.png",
+];
+
 function changeCert() {
   let cert_img = document.getElementById("github-cert");
   if (cert_img.getAttribute("data-cert") === "GL") {
@@ -86,14 +91,14 @@ function changeCertHtml() {
   let changeCert = document.getElementById("html-cert-html");
   changeCert.src = "";
 }
-function changeCertGit() {
+function changeCertGit(value) {
   let changeCert = document.getElementById("github-cert");
   let data = changeCert.getAttribute("data-git-cert");
-  if (data === "1") {
-    changeCert.src = "./images/git_testdome certificate.png";
-    changeCert.setAttribute("data-git-cert", "2");
-  } else {
-    changeCert.src = "./images/git_GreatLearning certificate.png";
-    changeCert.setAttribute("data-git-cert", "1");
+  if (value === 1 && parseInt(data) < git_Certs.length - 1) {
+    changeCert.src = git_Certs[parseInt(data) + 1];
+    changeCert.setAttribute("data-git-cert", (parseInt(data) + 1).toString());
+  } else if (value === -1 && parseInt(data) > 0) {
+    changeCert.src = git_Certs[data - 1];
+    changeCert.setAttribute("data-git-cert", (parseInt(data) - 1).toString());
   }
 }

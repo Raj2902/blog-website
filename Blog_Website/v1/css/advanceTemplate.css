@@ -220,6 +220,12 @@ center{
     padding: 5% 0px;
     display: none;
 }
+.fa-arrow-circle-left{
+    float: left;
+}
+.fa-arrow-circle-right{
+    float: right;
+}
 .multiple-images,.git-cert-group{
     display: flex;
     position: relative;

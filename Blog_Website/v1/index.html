@@ -17,8 +17,6 @@
       href="./favicon_io/favicon-32x32.png"
       type="image/x-icon"
     />
-    <!--tailwind csss-->
-    <link rel="stylesheet" href="./src/output.css">
     <!--Remove or add the comments from the link to enable or disable the styling on the webpage.-->
     <!--Basic template-->
     <!--<link id="stylesheet" rel="stylesheet" href="./css/basicTemplate.css"/>-->
@@ -377,9 +375,8 @@
                   class="html-cert"
                   id="html-cert"
                   onmouseover="showOverlayHtml()"
-                  ondrag="changeCertHtml()"
                 />
-                <p class="text-over-img-html" id="text-over-img-html">Drag to view more.</p>
+                <p class="text-over-img-html" id="text-over-img-html"><span onclick="changeCertHtml(-1)"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span><span>Use arrows to view more.</span><span onclick="changeCertHtml(+1)"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span></p>
                 </div>
                 <ul>
                   <li>
@@ -416,11 +413,10 @@
                         class="github-cert"
                         id="github-cert"
                         data-cert="GL"
-                        data-git-cert="1"
+                        data-git-cert="0"
                         onmouseover="showOverlayGit()"
-                        ondrag="changeCertGit()"
                       />
-                      <p class="text-over-img-git" id="text-over-img-git">Drag to view more.</p>
+                      <p class="text-over-img-git" id="text-over-img-git"><span onclick="changeCertGit(-1)"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span><span>Use arrows to view more.</span><span onclick="changeCertGit(+1)"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span></p>
                     </div>
                   </div>
                 </div>
@@ -453,9 +449,8 @@
                   alt="js-cert"
                   class="js-cert"
                   onmouseover="showOverlayJS()"
-                  ondrag="changeCertJS()"
                 />
-                <p class="text-over-img-JS" id="text-over-img-JS">Drag to view more.</p>
+                <p class="text-over-img-JS" id="text-over-img-JS"><span onclick="changeCertJS(-1)"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span><span>Use arrows to view more.</span><span onclick="changeCertJS(+1)"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span></p>
               </div>
                 <ul>
                   <li>
