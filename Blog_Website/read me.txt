@@ -10,3 +10,7 @@ Challenges I faced :
 I did'nt felt there was such tidious task that couldnt be completed I faced challenges in color selection for the theme and the layout of the page that where should the things be placed, i took me some time to give sapcing to the elements for a clear distinction making the pages look good ie responsive was a hit lenghty process for me.
 
 It was fun to complete this task...
+
+live url : https://blgweb.vercel.app/
+
+preview video url : 

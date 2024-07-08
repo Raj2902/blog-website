@@ -33,6 +33,7 @@ iframe{
     width: -webkit-fill-available;
     height: 35%;
     padding: 5%;
+    margin: 0px;
 }
 /*making footer background black*/
 footer{
