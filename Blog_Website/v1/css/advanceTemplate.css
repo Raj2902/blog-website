@@ -1,11 +1,12 @@
 /*making text white as default of the whole page.*/
 /*I will use theme as red and white*/
 *{
-    color: white;
+    color: rgb(0, 0, 0);
 }
 /*making background red shade*/
 body{
-    background-image: linear-gradient(to left, #f00, black);
+    /* background-image: linear-gradient(to left, #f00, black); */
+    background-image: url('../images/background-img.jpg');
     margin: 0;
     font-family: system-ui,cursive;
 }
@@ -72,6 +73,7 @@ h1{
     font-size: xx-large;
     letter-spacing: 5px;
     font-family: math;
+    padding-left: 10px;
 }
 /*pop out header from the rest of the screen by using margin*/
 header{
@@ -100,8 +102,8 @@ h3{
     animation: color-change 5s linear 0s infinite alternate;
 }
 @keyframes color-change {
-    from{color:rgb(0, 0, 0);}
-    to{color: #cc0000;}
+    from{color:rgb(0, 29, 96);}
+    to{color: #ffffff;}
 }
 .images{
     display: flex;
@@ -113,6 +115,7 @@ h3{
     border: 3px solid black;
     box-shadow: 0 3px black;
     border-bottom: 10px solid black;
+    padding: 0px 10px;
 }
 label{
     display: none;
@@ -146,7 +149,6 @@ b{
 a:hover{
     color: black;
     background-color: white;
-    padding: 1%;
 }
 .form{
     display: flex;
@@ -160,6 +162,7 @@ a:hover{
 }
 img{
     margin-top: 10%;
+    margin-right: 10px;
 }
 i{
     padding-left: 1%;
@@ -210,6 +213,12 @@ center{
     animation-duration: 2s;
     animation-iteration-count: infinite;
 }
+.text-over-img-html span,.text-over-img-git span,.text-over-img-JS span{
+    color: white;
+}
+.text-over-img-html span i,.text-over-img-git span i,.text-over-img-JS span i{
+    color: white;
+}
 .text-over-img-html,.text-over-img-git,.text-over-img-JS{
     position: absolute;
     color: white;
@@ -232,11 +241,53 @@ center{
     justify-content: center;
     align-items: center;
 }
+article a{
+    color: blue;
+    text-decoration: underline;
+}
+center, .w-link, .fa, .email-p span{
+    color: white;
+}
 @keyframes r {
     from{ transform: rotateY(0deg);}
     to{ transform: rotateY(360deg);}
 }
 @media screen and (min-width: 768px) {
+    .headerMain{
+        margin: 50px;
+    }
+    h2{
+        font-size: xxx-large;
+    }
+    h3{
+        font-size: xx-large;
+    }
+    .contact-links li {
+        width: 103px;
+    }
+    .github-cert, .html-cert, .js-cert, .github-cert-testdome{
+        width: 35%;
+        padding-top: 0;
+    }
+    .form{
+        flex-direction: row;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+    nav ul{
+        width: 100px;
+    }
+    h1{
+        font-size: xxx-large;
+        text-align: center;
+    }
+    .header-p{
+        padding: 5%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
     .skill-drop, .skill-drop-cert{
         display: none;
         position: absolute;
@@ -252,5 +303,16 @@ center{
     .contact-links{
         display: flex;
         justify-content: space-around;
+    }
+    .images{
+        padding: 0;
+    }
+    img{
+        margin-top: 50px;
+    }
+    .text-over-img-html,.text-over-img-git,.text-over-img-JS{
+        width: 35%;
+        text-align: center;
+        padding: 1% 0px;
     }
   }

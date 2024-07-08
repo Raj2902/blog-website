@@ -1,0 +1,12 @@
+Design choices :
+
+I have three templates as design to showcast my skills basic, intermidiate and advance basic includes the use of font sizes, color, background color, border giving it a classy look.
+In the intermidiate i tired to impliment the skills that the accquired within the course and tried to be creative made modification in the design color theme changes added texture and animation. For the advance template i implemented animation with background image to give it a professional look.
+Implemented hovering and transform effects for interactiveness.
+My design choice is mostly based on slef though process and creativety with the moto to implement and practise whatever i haved learned throughout this course.
+
+
+Challenges I faced :
+I did'nt felt there was such tidious task that couldnt be completed I faced challenges in color selection for the theme and the layout of the page that where should the things be placed, i took me some time to give sapcing to the elements for a clear distinction making the pages look good ie responsive was a hit lenghty process for me.
+
+It was fun to complete this task...

@@ -259,17 +259,20 @@ label{
         left:1400px;
     }
 }
+.skill-drop li a:hover, .skill-drop-cert li a:hover{
+    background: white;
+}
 .skill-drop, .skill-drop-cert{
     display: none;
-    position: absolute;
     background: #beb2a3;
-    padding: 0;
-    width: 30%;
-    text-align: center;
-    right: 26px;
+    padding: 10px;
+}
+
+.text-over-img-html,.text-over-img-JS,.text-over-img-git{
+    display: none !important;
 }
 /*  media queries for responsive design*/
-@media (max-width:426px) and (min-width:320px){
+@media (max-width:768px) and (min-width:320px){
 .github-cert,.html-cert,.js-cert,iframe{
     width: 100%;
 }
@@ -327,14 +330,5 @@ nav{
     .contact-links{
         display: flex;
         justify-content: space-around;
-    }
-    .skill-drop, .skill-drop-cert{
-        display: none;
-        position: absolute;
-        float: right;
-        background: #8b8b8b;
-        padding: 0;
-        width: 15%;
-        text-align: center;
     }
 }

@@ -27,7 +27,7 @@ function temp_select() {
 /*To show dropdown skills*/
 function showDropdown() {
   let show = document.getElementById("skill-drop");
-  show.style.display = "block";
+  show.style.display = "inline-block";
 }
 function hideDropdown() {
   let show = document.getElementById("skill-drop");
@@ -36,7 +36,7 @@ function hideDropdown() {
 /*To show dropdown certificates*/
 function showDropdown_cert() {
   let show = document.getElementById("skill-drop-cert");
-  show.style.display = "block";
+  show.style.display = "inline-block";
 }
 function hideDropdown_cert() {
   let show = document.getElementById("skill-drop-cert");
@@ -93,12 +93,15 @@ function changeCertHtml() {
 }
 function changeCertGit(value) {
   let changeCert = document.getElementById("github-cert");
+  let changeCertLink = document.getElementById("github-cert-link");
   let data = changeCert.getAttribute("data-git-cert");
   if (value === 1 && parseInt(data) < git_Certs.length - 1) {
     changeCert.src = git_Certs[parseInt(data) + 1];
+    changeCertLink.href = git_Certs[parseInt(data) + 1];
     changeCert.setAttribute("data-git-cert", (parseInt(data) + 1).toString());
   } else if (value === -1 && parseInt(data) > 0) {
     changeCert.src = git_Certs[data - 1];
+    changeCertLink.href = git_Certs[data - 1];
     changeCert.setAttribute("data-git-cert", (parseInt(data) - 1).toString());
   }
 }
